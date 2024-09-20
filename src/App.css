@@ -1,0 +1,103 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.input-section {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slider-output {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-slider {
+  width: 100%;
+  margin: 1rem 0;
+  -webkit-appearance: none;
+  height: 8px;
+  background: #d3d3d3;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #4e54c8;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.input-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: #4e54c8;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.output {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .input-section {
+    padding: 15px;
+  }
+
+  .slider-output {
+    font-size: 1rem;
+  }
+
+  .output {
+    font-size: 1.3rem;
+  }
+}
+
+/* PC Styles */
+@media (min-width: 769px) {
+  .input-section {
+    padding: 25px;
+  }
+
+  .slider-output {
+    font-size: 1.4rem;
+  }
+
+  .output {
+    font-size: 1.7rem;
+  }
+}
